@@ -1,0 +1,17 @@
+<h1>Update an Actor</h1>
+
+<div>
+<form action="http://localhost:3000/movies/<%= @movie.id %>/update_movie">
+  Title:
+  <input name="update_movie_title" type="text" value="<%= @movie.title %>">
+  Image URL:
+  <input name="update_movie_img" type="text" value="<%= @movie.image_url %>">
+  Description:
+  <input name="update_movie_desc" type="text" value="<%= @movie.description %>">
+  Year:
+  <input name="update_movie_year" type="number" value="<%= @movie.year %>">
+  Duration:
+  <input name="update_movie_dur" type="number" value="<%= @movie.duration %>">
+  <button>Update Movie</button>
+</form>
+</div>
